@@ -5,27 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashboard Target</title>
     <link rel="stylesheet" href="../styles.css">
-    <script src="../rescan.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <a class="brand-link" href="../index.html">Visual Sample</a>
-      <div class="header-actions">
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="../index.html">Home</a>
-          <a href="box-grid.html">Box Grid</a>
-          <a class="active" href="dashboard.html">Dashboard</a>
-        </nav>
-        <button class="rescan-button" type="button" data-rescan-target>Rescan Target</button>
-      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../index.html">Home</a>
+        <a href="box-grid.html">Box Grid</a>
+        <a class="active" href="dashboard.html">Dashboard</a>
+      </nav>
     </header>
 
-    <main class="dashboard-page" data-visual-target>
+    <main class="dashboard-page">
       <section class="dashboard-title" aria-labelledby="dashboard-heading">
         <div>
           <p class="eyebrow">Complex fixture</p>
           <h1 id="dashboard-heading">Operations Dashboard</h1>
-          <p class="rescan-status" aria-live="polite" data-rescan-status>Ready for scan</p>
         </div>
         <div class="date-pill">June 2026</div>
       </section>
