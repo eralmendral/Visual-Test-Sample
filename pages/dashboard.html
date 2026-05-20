@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard Target</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand-link" href="../index.html">Visual Sample</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../index.html">Home</a>
+        <a href="box-grid.html">Box Grid</a>
+        <a class="active" href="dashboard.html">Dashboard</a>
+      </nav>
+    </header>
+
+    <main class="dashboard-page">
+      <section class="dashboard-title" aria-labelledby="dashboard-heading">
+        <div>
+          <p class="eyebrow">Complex fixture</p>
+          <h1 id="dashboard-heading">Operations Dashboard</h1>
+        </div>
+        <div class="date-pill">May 2026</div>
+      </section>
+
+      <section class="metric-grid" aria-label="Snapshot metrics">
+        <article class="metric-card metric-card-teal">
+          <span>Revenue</span>
+          <strong>$84.2k</strong>
+          <small>+12.4%</small>
+        </article>
+        <article class="metric-card metric-card-coral">
+          <span>Open Issues</span>
+          <strong>37</strong>
+          <small>-8 today</small>
+        </article>
+        <article class="metric-card metric-card-gold">
+          <span>Deploys</span>
+          <strong>19</strong>
+          <small>4 pending</small>
+        </article>
+        <article class="metric-card metric-card-indigo">
+          <span>Uptime</span>
+          <strong>99.98%</strong>
+          <small>30 days</small>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel chart-panel" aria-labelledby="traffic-title">
+          <div class="panel-heading">
+            <h2 id="traffic-title">Traffic Mix</h2>
+            <span class="status-pill status-live">Live</span>
+          </div>
+          <div class="bar-chart" aria-label="Traffic bar chart">
+            <div class="bar bar-cyan" style="--bar-height: 72%"><span>Web</span></div>
+            <div class="bar bar-violet" style="--bar-height: 48%"><span>API</span></div>
+            <div class="bar bar-amber" style="--bar-height: 62%"><span>Jobs</span></div>
+            <div class="bar bar-rose" style="--bar-height: 36%"><span>Mobile</span></div>
+            <div class="bar bar-emerald" style="--bar-height: 84%"><span>CDN</span></div>
+          </div>
+        </article>
+
+        <article class="panel status-panel" aria-labelledby="status-title">
+          <div class="panel-heading">
+            <h2 id="status-title">Service Status</h2>
+            <span class="status-pill status-warning">Mixed</span>
+          </div>
+          <ul class="service-list">
+            <li><span class="dot dot-green"></span><strong>Checkout</strong><em>Healthy</em></li>
+            <li><span class="dot dot-yellow"></span><strong>Search</strong><em>Delayed</em></li>
+            <li><span class="dot dot-green"></span><strong>Billing</strong><em>Healthy</em></li>
+            <li><span class="dot dot-red"></span><strong>Reports</strong><em>Review</em></li>
+          </ul>
+        </article>
+
+        <article class="panel table-panel" aria-labelledby="release-title">
+          <div class="panel-heading">
+            <h2 id="release-title">Release Queue</h2>
+            <span class="status-pill status-neutral">4 items</span>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Version</th>
+                <th>Owner</th>
+                <th>Status</th>
+                <th>Risk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2.8.0</td>
+                <td>Design</td>
+                <td><span class="table-badge badge-ready">Ready</span></td>
+                <td>Low</td>
+              </tr>
+              <tr>
+                <td>2.8.1</td>
+                <td>Core</td>
+                <td><span class="table-badge badge-review">Review</span></td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>2.9.0</td>
+                <td>Platform</td>
+                <td><span class="table-badge badge-blocked">Blocked</span></td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>2.9.1</td>
+                <td>Growth</td>
+                <td><span class="table-badge badge-ready">Ready</span></td>
+                <td>Low</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
