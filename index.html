@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Visual Regression Sample Targets</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="rescan.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <a class="brand-link" href="index.html">Visual Sample</a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a class="active" href="index.html">Home</a>
-        <a href="pages/box-grid.html">Box Grid</a>
-        <a href="pages/dashboard.html">Dashboard</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a class="active" href="index.html">Home</a>
+          <a href="pages/box-grid.html">Box Grid</a>
+          <a href="pages/dashboard.html">Dashboard</a>
+        </nav>
+        <button class="rescan-button" type="button" data-rescan-target>Rescan Target</button>
+      </div>
     </header>
 
-    <main class="home-page">
+    <main class="home-page" data-visual-target>
+      <p class="rescan-status" aria-live="polite" data-rescan-status>Ready for scan</p>
       <section class="intro-band" aria-labelledby="page-title">
         <p class="eyebrow">Static fixture site</p>
         <h1 id="page-title">Visual regression sample targets</h1>

@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashboard Target</title>
     <link rel="stylesheet" href="../styles.css">
+    <script src="../rescan.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <a class="brand-link" href="../index.html">Visual Sample</a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="../index.html">Home</a>
-        <a href="box-grid.html">Box Grid</a>
-        <a class="active" href="dashboard.html">Dashboard</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="../index.html">Home</a>
+          <a href="box-grid.html">Box Grid</a>
+          <a class="active" href="dashboard.html">Dashboard</a>
+        </nav>
+        <button class="rescan-button" type="button" data-rescan-target>Rescan Target</button>
+      </div>
     </header>
 
-    <main class="dashboard-page">
+    <main class="dashboard-page" data-visual-target>
       <section class="dashboard-title" aria-labelledby="dashboard-heading">
         <div>
           <p class="eyebrow">Complex fixture</p>
           <h1 id="dashboard-heading">Operations Dashboard</h1>
+          <p class="rescan-status" aria-live="polite" data-rescan-status>Ready for scan</p>
         </div>
         <div class="date-pill">May 2026</div>
       </section>
@@ -28,13 +33,13 @@
       <section class="metric-grid" aria-label="Snapshot metrics">
         <article class="metric-card metric-card-teal">
           <span>Revenue</span>
-          <strong>$84.2k</strong>
-          <small>+12.4%</small>
+          <strong>$86.4k</strong>
+          <small>+13.1%</small>
         </article>
         <article class="metric-card metric-card-coral">
           <span>Open Issues</span>
-          <strong>37</strong>
-          <small>-8 today</small>
+          <strong>34</strong>
+          <small>-11 today</small>
         </article>
         <article class="metric-card metric-card-gold">
           <span>Deploys</span>
@@ -55,11 +60,11 @@
             <span class="status-pill status-live">Live</span>
           </div>
           <div class="bar-chart" aria-label="Traffic bar chart">
-            <div class="bar bar-cyan" style="--bar-height: 72%"><span>Web</span></div>
-            <div class="bar bar-violet" style="--bar-height: 48%"><span>API</span></div>
+            <div class="bar bar-cyan" style="--bar-height: 66%"><span>Web</span></div>
+            <div class="bar bar-violet" style="--bar-height: 54%"><span>API</span></div>
             <div class="bar bar-amber" style="--bar-height: 62%"><span>Jobs</span></div>
             <div class="bar bar-rose" style="--bar-height: 36%"><span>Mobile</span></div>
-            <div class="bar bar-emerald" style="--bar-height: 84%"><span>CDN</span></div>
+            <div class="bar bar-emerald" style="--bar-height: 78%"><span>CDN</span></div>
           </div>
         </article>
 
